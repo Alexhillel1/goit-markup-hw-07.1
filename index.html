@@ -457,7 +457,7 @@
 
               <form class="footer-form">
                 <input class="footer-input" type="email" placeholder="E-mail" />
-                <button class="footer-form-btn">
+                <button type="submit" class="footer-form-btn">
                   Подписаться
                   <svg class="footer-btn-svg" width="24" height="24">
                     <use href="./img/symbol-defs.svg#icon-footeltelegram"></use>
@@ -517,14 +517,16 @@
               <textarea class="form-textarea" name="subject" cols="30" rows="6" placeholder="Введите текст" id="subject"></textarea>
             </div>
 
-            <label class="label-chek" for="modal-chek">
-              <input class="modal-chek" type="checkbox" id="modal-chek" name="user-cheked" />
-              <span class="chek-box"></span>
-              <svg class="modal-chek-svg" width="13px" height="10">
-                <use href="./img/1.svg#icon-icon-check"></use>
-              </svg>
-              <span class="policy-text">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a></span>
-            </label>
+            <div class="form-chek">
+              <label class="label-chek" for="modal-chek">
+                <input class="modal-chek" type="checkbox" id="modal-chek" name="user-cheked" />
+                <span class="chek-box"></span>
+                <svg class="modal-chek-svg" width="13px" height="10">
+                  <use href="./img/1.svg#icon-icon-check"></use>
+                </svg>
+                <span class="policy-text">Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия договора</a></span>
+              </label>
+            </div>
 
             <button class="form-policy-btn" type="submit">Отправить</button>
           </form>
