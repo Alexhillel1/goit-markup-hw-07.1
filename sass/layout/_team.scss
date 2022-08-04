@@ -2,18 +2,18 @@
   background-color: var(--bg-white-color);
 }
 
-.team-title {
+.team__title {
   margin-bottom: 50px;
 }
 
-.team-list {
+.team__list {
   display: flex;
   align-items: center;
   column-gap: 30px;
   row-gap: 10px;
 }
 
-.team-item {
+.team__item {
   width: calc((100% - 90px) / 4);
   /* calc((100% - кол-во_зазоров_в_строке * значение_одного_зазора) / кол-во_элементов_в_строке) */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -26,7 +26,7 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-name-title {
+.team-card__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -34,20 +34,20 @@
   margin-bottom: 10px;
 }
 
-.team-job-descr {
+.team-card__descr {
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 16px;
 }
 
-.team-icon-list {
+.team-icon__list {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 10px;
 }
 
-.team-icon-link {
+.team-icon__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -65,6 +65,6 @@
   }
 }
 
-.team-icon-svg {
+.team-icon__svg {
   fill: currentColor;
 }

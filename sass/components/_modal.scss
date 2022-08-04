@@ -49,7 +49,7 @@
   }
 }
 
-.title-modal {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -60,13 +60,13 @@
   margin-bottom: 12px;
 }
 
-.form-field {
+.modal-form__field {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
-.form-label {
+.modal-form__label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -79,7 +79,7 @@
   margin-bottom: 4px;
 }
 
-.form-input {
+.modal-form__input {
   width: 100%;
   font-size: 12px;
   line-height: 1.16;
@@ -118,7 +118,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-textarea {
+.modal-form__textarea {
   width: 100%;
   height: 120px;
 
@@ -148,13 +148,13 @@
   text-align: center;
 }
 
-.form-chek {
+.modal-form__chek {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.label-chek {
+.modal-form__label--chek {
   display: inline-block;
   position: relative;
   padding-left: 23px;
@@ -164,7 +164,7 @@
   cursor: pointer;
 }
 
-.modal-chek {
+.modal-form__input--chek {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -175,7 +175,7 @@
   overflow: hidden;
 }
 
-.chek-box {
+.modal-form__chekbox {
   position: absolute;
   width: 16px;
   height: 15px;
@@ -186,22 +186,22 @@
   transform: translate(-50%, -50%);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .modal-chek:focus + & {
+  .modal-form__input--chek:focus + & {
     border: 2px solid var(--main-acent-color);
   }
 
-  .modal-chek:checked:focus + & {
+  .modal-form__input--chek:checked:focus + & {
     border: 2px solid var(--main-acent-color);
     background-color: var(--main-acent-color);
   }
 
-  .modal-chek:checked + & {
+  .modal-form__input--chek:checked + & {
     border: 2px solid var(--main-acent-color);
     background-color: var(--main-acent-color);
   }
 }
 
-.modal-chek-svg {
+.modal-form__chek-svg {
   position: absolute;
   left: 8px;
   top: 50%;
@@ -209,12 +209,22 @@
   fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  .modal-chek:checked ~ & {
+  .modal-form__chek:checked ~ & {
     fill: var(--white-color);
   }
 }
 
-.policy-link {
+.modal-form__policy-text {
+  font-weight: 400;
+  line-height: 1.71;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--description-color);
+}
+
+.modal-form__policy-link {
   color: var(--main-acent-color);
   transition: color 250ms cubic-bezier(0.23, 1, 0.32, 1);
 
@@ -223,7 +233,7 @@
   }
 }
 
-.form-policy-btn {
+.modal-form__policy-btn {
   display: block;
   width: 200px;
   margin: 0 auto;

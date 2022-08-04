@@ -2,21 +2,21 @@
   padding-bottom: 47px;
 }
 
-.about-list {
+.about__list {
   display: flex;
   align-items: center;
   column-gap: 30px;
   row-gap: 10px;
 }
 
-.about-item-svgbox {
+.about__item-svg--box {
   background-color: var(--bg-white-color);
   border-radius: 4px;
   margin-bottom: 30px;
   padding: 25px 100px;
 }
 
-.about-item-title {
+.about__item-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
   margin-bottom: 10px;
 }
 
-.about-item-descr {
+.about__item-descr {
   max-width: 270px;
   font-size: 14px;
   line-height: 1.71;
@@ -34,11 +34,11 @@
   padding-top: 47px;
 }
 
-.title-how {
+.title__how {
   margin-bottom: 50px;
 }
 
-.how-list {
+.how__list {
   display: flex;
   align-items: center;
   column-gap: 30px;
@@ -49,7 +49,7 @@
   position: relative;
 }
 
-.how-descr {
+.how__descr {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -59,7 +59,7 @@
   padding: 27px 30px;
 }
 
-.how-descr-sub {
+.how-descr__sub {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;

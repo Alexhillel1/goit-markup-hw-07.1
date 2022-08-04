@@ -10,13 +10,14 @@
 }
 
 .logo {
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.19;
   color: var(--black-color);
   margin-right: 93px;
 
-  & span {
+  & .logo__header--span {
     color: var(--main-acent-color);
   }
 }
@@ -26,13 +27,13 @@
   align-items: center;
 }
 
-.menu-list {
+.menu__list {
   display: flex;
   align-items: center;
   column-gap: 50px;
 }
 
-.menu-link {
+.menu__link {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -48,7 +49,7 @@
   }
 }
 
-.menu-link.current {
+.menu__link--current {
   padding-bottom: 34px;
   /*оч жеский (невероятный) костыль*/
   padding-top: 32px;
@@ -66,14 +67,14 @@
   }
 }
 
-.menu-adress-list {
+.menu-adress__list {
   display: flex;
   align-items: center;
   margin-left: auto;
   column-gap: 50px;
 }
 
-.address-link {
+.address__link {
   display: inline-flex;
   align-items: center;
   color: var(--description-color);
@@ -89,18 +90,10 @@
   }
 }
 
-.activ-link.current {
-  color: var(--main-acent-color);
-}
-
-.menu-adress-item .activ-link {
-  color: var(--main-acent-color);
-}
-
-.header-mail {
+.address-svg__mail {
   margin-right: 10px;
 }
 
-.header-tel {
+.address-svg__tel {
   margin-right: 10px;
 }
