@@ -22,7 +22,7 @@
   }
 }
 
-.nav-menu {
+.menu {
   display: flex;
   align-items: center;
 }
@@ -67,14 +67,14 @@
   }
 }
 
-.menu-adress__list {
+.menu__address-list {
   display: flex;
   align-items: center;
   margin-left: auto;
   column-gap: 50px;
 }
 
-.address__link {
+.menu__address-link {
   display: inline-flex;
   align-items: center;
   color: var(--description-color);
@@ -90,10 +90,10 @@
   }
 }
 
-.address-svg__mail {
+.menu__address-svg--mail {
   margin-right: 10px;
 }
 
-.address-svg__tel {
+.menu__address-svg--tel {
   margin-right: 10px;
 }
